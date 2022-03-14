@@ -1,0 +1,111 @@
+:root {
+  --primary-text-color: #757575;
+  --primary-title-color: #212121;
+  --accent-color: #2196f3;
+  --button-color: #f5f4fa;
+  --primary-white-color: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
+}
+
+/*Цвет заголовков*/
+.title {
+  color: var(--primary-title-color);
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+.notdisplay {
+  display: none;
+}
+/*Логотип*/
+.logo {
+  color: var(--accent-color);
+  font-family: raleway;
+  font-size: 26px;
+  line-height: 31px;
+  font-weight: 700;
+}
+.logo .studio {
+  color: var(--primary-title-color);
+}
+.logo .studio-f {
+  color: var(--primary-white-color);
+}
+.logo:hover,
+.logo:focus {
+}
+
+/*site-nav*/
+.site-nav,
+.contacts {
+  font-size: 14px;
+  line-height: 1.625;
+  font-weight: 500;
+}
+.site-nav a {
+  color: var(--primary-title-color);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+.contacts a {
+  color: var(--primary-text-color);
+  font-style: normal;
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/*button*/
+.button {
+  background-color: var(--button-color);
+  border: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+}
+.button:hover,
+.button:focus {
+  border: var(--accent-color);
+}
+.button.primary {
+  background-color: var(--accent-color);
+  border: transparent;
+  color: var(--primary-white-color);
+}
+
+/*footer*/
+footer {
+  background-color: #2f303a;
+}
+.contacts .map a {
+  color: var(--primary-white-color);
+  font-style: normal;
+}
+address .contacts {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+}
