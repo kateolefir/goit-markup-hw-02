@@ -4,15 +4,16 @@
   --accent-color: #2196f3;
   --button-color: #f5f4fa;
   --primary-white-color: #ffffff;
+  --bg-footer-color: #2f303a;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.875;
-  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
 }
 
 li {
@@ -27,18 +28,27 @@ li {
   font-weight: 700;
 }
 
+/*Скрытые строки и маркеры*/
 a {
   text-decoration: none;
 }
 .notdisplay {
   display: none;
 }
+
+/*Карточки товаров*/
+.text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.875;
+}
+
 /*Логотип*/
 .logo {
   color: var(--accent-color);
   font-family: raleway;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.192;
   font-weight: 700;
 }
 .logo .studio {
@@ -98,7 +108,7 @@ a {
 
 /*footer*/
 footer {
-  background-color: #2f303a;
+  background-color: var(--bg-footer-color);
 }
 .contacts .map a {
   color: var(--primary-white-color);
@@ -106,6 +116,5 @@ footer {
 }
 address .contacts {
   font-weight: 400;
-  font-size: 14px;
   line-height: 2;
 }
