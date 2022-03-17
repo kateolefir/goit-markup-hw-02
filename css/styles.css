@@ -16,16 +16,58 @@ body {
   letter-spacing: 0.03em;
 }
 
+/*Герой страницы "Студия"*/
+.hero {
+  background-color: var(--bg-footer-color);
+}
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero .button {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
 li {
   list-style: none;
 }
 
 /*Цвет заголовков*/
-.title {
+.portfolio-list .title {
   color: var(--primary-title-color);
   font-size: 18px;
   line-height: 2;
   font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.features .title {
+  color: var(--primary-title-color);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.title-work {
+  color: var(--primary-title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+}
+.team .title {
+  color: var(--primary-title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
 }
 
 /*Скрытые строки и маркеры*/
@@ -36,11 +78,17 @@ a {
   display: none;
 }
 
-/*Карточки товаров*/
-.text {
+/*Текст страниц*/
+.portfolio-list .text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.875;
+}
+.features .text {
+  line-height: 1.714;
+}
+.team .text {
+  line-height: 1.1875;
 }
 
 /*Логотип*/
@@ -67,6 +115,7 @@ a {
   font-size: 14px;
   line-height: 1.625;
   font-weight: 500;
+  letter-spacing: 0.02em;
 }
 .site-nav a {
   color: var(--primary-title-color);
@@ -87,22 +136,24 @@ a {
   color: var(--accent-color);
 }
 
-/*button*/
+/*buttons "Портфолио"*/
+
 .button {
   background-color: var(--button-color);
-  border: transparent;
+  border-color: transparent;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
 }
+
 .button:hover,
 .button:focus {
-  border: var(--accent-color);
+  border-color: var(--accent-color);
 }
+
 .button.primary {
   background-color: var(--accent-color);
-  border: transparent;
   color: var(--primary-white-color);
 }
 
@@ -113,6 +164,10 @@ footer {
 .contacts .map a {
   color: var(--primary-white-color);
   font-style: normal;
+}
+.contacts .map a:hover,
+.contacts .map a:focus {
+  color: var(--accent-color);
 }
 address .contacts {
   font-weight: 400;
