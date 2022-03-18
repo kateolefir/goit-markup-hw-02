@@ -149,7 +149,8 @@ a {
 
 .button:hover,
 .button:focus {
-  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
 .button.primary {
